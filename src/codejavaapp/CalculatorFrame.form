@@ -50,7 +50,7 @@
               <Component id="jScrollPane1" alignment="0" max="32767" attributes="0"/>
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="buttonSeven" min="-2" pref="107" max="-2" attributes="0"/>
@@ -93,8 +93,10 @@
                           </Group>
                       </Group>
                       <Group type="102" attributes="0">
-                          <Component id="buttonCa" min="-2" pref="327" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="buttonCa" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="clearEntry" min="-2" pref="107" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                           <Component id="buttonMultiplication" min="-2" pref="107" max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -139,7 +141,10 @@
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="buttonCa" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="buttonCa" min="-2" pref="40" max="-2" attributes="0"/>
+                              <Component id="clearEntry" alignment="1" min="-2" pref="40" max="-2" attributes="0"/>
+                          </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="buttonSeven" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
@@ -326,6 +331,14 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Made by HyperEr00"/>
           </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="clearEntry">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="CE"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="clearEntryActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
