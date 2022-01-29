@@ -26,7 +26,7 @@ public class CalculatorFrame extends javax.swing.JFrame {
         initComponents();
         this.setVisible(true);
         this.setSize(500, 360);
-        this.setTitle("Event handling example");
+        this.setTitle("Calculator");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
