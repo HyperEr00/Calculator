@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package codejavaapp;
+package Calculator;
 
 /**
  *
  * @author Hyperer
  */
-public class CodeJavaApp {
+public class Calculator {
 
     /**
      * @param args the command line arguments
