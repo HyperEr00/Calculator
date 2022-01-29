@@ -20,38 +20,26 @@ public class Calc {
         this.firstNumber = firstNumber;
         this.secondNumber = secondNumber;
         this.operations = operations;
-        System.out.println("calc object");
-        System.out.println(this.firstNumber);
-        System.out.println(this.secondNumber);
-        System.out.println(this.operations);
     }
     
     public String doCalc() {
         if (operations == "-") {
             total = firstNumber - secondNumber;
-            expression = Double.toString(total);
-            return expression;
         } else if (operations == "+") {
             total = firstNumber + secondNumber;
-            expression = Double.toString(total);
-            return expression;
         } else if (operations == "/") {
             total = firstNumber / secondNumber;
-            expression = Double.toString(total);
-            return expression;
         } else if (operations == "*") {
             total = firstNumber * secondNumber;
-            System.out.println(total);
-            expression = Double.toString(total);
-            return expression;
         } else {
+        }
+        if ((total%1) != 0){
+        total = (double)Math.round(total * 100d) /100d;
+        expression = Double.toString(total);
+        return expression;
+        } else {
+            expression = Integer.toString((int) total);
             return expression;
         }
     }
-
-    
-    
-    
-    
-    
 }
